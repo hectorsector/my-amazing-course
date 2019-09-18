@@ -6,6 +6,7 @@ template:
   name: my-amazing-coursessss
 before:
   - type: createStatus
+    state: failure
     failure: 
       description: >-
         Ya failed.
