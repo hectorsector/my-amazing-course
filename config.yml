@@ -6,7 +6,9 @@ template:
   name: my-amazing-coursessss
 before:
   - type: createStatus
-    state: failure
+    failure: 
+      description: >-
+        Ya failed.
     sha: 73004fc202f9eae3092eab53ac21c76e5b9edf34
   - type: createIssue
     title: Welcome!
