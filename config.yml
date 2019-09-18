@@ -3,7 +3,7 @@ tagline: A brand new course on Learning Lab
 description: an amazing course
 template:
   repo: my-amazing-course-template
-  name: my-amazing-course
+  name: my-amazing-coursessss
 before:
   - type: createStatus
     state: failure
