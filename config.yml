@@ -5,6 +5,8 @@ template:
   repo: my-amazing-course-template
   name: my-amazing-course
 before:
+  - type: createStatus
+    state: failure
   - type: createIssue
     title: Welcome!
     body: new-issue.md
