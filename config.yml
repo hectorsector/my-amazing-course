@@ -7,6 +7,7 @@ template:
 before:
   - type: createStatus
     state: failure
+    context: a sample context
     sha: 73004fc202f9eae3092eab53ac21c76e5b9edf34
   - type: createIssue
     title: Welcome!
