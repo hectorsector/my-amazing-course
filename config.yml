@@ -16,7 +16,10 @@ before:
 steps:
   - title: First step
     description: The first step in your course
-    event: issues.assigned
+    event: installation
     link: '{{ repoUrl }}'
     actions:
-      - type: closeIssue
+      - type: respond
+        with: installed.md
+        data:
+          thePayload: '%payload%'
