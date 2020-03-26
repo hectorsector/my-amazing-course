@@ -5,10 +5,6 @@ template:
   repo: my-amazing-course-template
   name: my-amazing-coursessss
 before:
-  - type: createStatus
-    state: failure
-    context: a sample context
-    sha: 73004fc202f9eae3092eab53ac21c76e5b9edf34
   - type: createIssue
     title: Welcome!
     body: new-issue.md
@@ -16,7 +12,7 @@ before:
 steps:
   - title: First step
     description: The first step in your course
-    event: installation
+    event: issue_comment.created
     link: '{{ repoUrl }}'
     actions:
       - type: respond
