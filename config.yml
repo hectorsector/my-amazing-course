@@ -22,4 +22,4 @@ steps:
       - type: respond
         with: installed.md
         data:
-          thePayload: '%payload%'
+          thePayload: '{{ payload }}'
